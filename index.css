@@ -12,7 +12,8 @@
 header {
   width: 100%;
   height: 60vh;
-  background: rgba(0, 0, 0, 0.7) url("./music-player-2951399.jpg");
+  background: rgba(0, 0, 0, 0.7)
+    url("./Homework1_Images/music-player-2951399.jpg");
   background-blend-mode: darken;
   background-position: center;
   background-size: cover;
@@ -95,19 +96,21 @@ ul {
   flex-direction: column;
   align-items: center;
   letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 .sub-container .sub-adver2 {
-  border: 2px black;
-  border-style: dashed;
+  /* border: 2px black;
+  border-style: dashed; */
   border-radius: 40px;
   text-align: left;
-  height: 300px;
+  height: 320px;
   width: 450px;
-  background-color: rgba(10,214,221,0.3);
+  background-color: #0ad6dd4d;
+  line-height: 1.5;
 }
 
-#sub-button{
+#sub-button {
   margin-top: 10px;
   background-color: #4897b6;
   border: none;
@@ -122,91 +125,160 @@ ul {
   transition: 0.4s;
 }
 
-#sub-button:hover{
+#sub-button:hover {
   background-color: white;
   border: black 2px solid;
   color: black;
 }
 
-.button{
+#Home a {
+  font-size: 170%;
+}
+
+#sub a {
+  font-size: 170%;
+}
+
+.header #classHomework {
+  font-size: 150%;
+  color: red;
+  width: 700px;
+}
+
+.button {
   display: flex;
   justify-content: center;
 }
 
-.review{
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(6,200,202,255));
-  margin-top: 150px;
-  padding-bottom: 100px;
-  height:60%
-  }
-
-.contain{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 200px;
-  }
-
-.contain .reviewer{
+.review {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0),
+    rgba(6, 200, 202, 255)
+  );
   margin-top: 100px;
-  font-size: 50px
+  padding-bottom: 100px;
+  height: 60%;
 }
 
-
-.iframe iframe{
-  margin-top: 75px;
-  height:300px; 
-  width:800px;
-  margin-left: 25px;
+.reviewer p {
+  line-height: 1.5;
 }
 
-@media only screen and (max-width: 768px){
+.contain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 195px;
+}
 
-  header{
+.contain .reviewer {
+  margin-top: 120px;
+  font-size: 46px;
+}
+
+.contain .iframe {
+  margin-top: 120px;
+}
+
+.iframe iframe {
+  width: 700px;
+  height: 500px;
+}
+
+.review p {
+  height: 100px;
+  width: 700px;
+}
+
+.reviewer #paragraph {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
     height: 80vh;
   }
 
-  .nav_link{
+  .sub_sec .sub-adver2 {
+    font-size: 8px;
+  }
+
+  .nav_link {
     column-gap: -10px;
   }
 
-  .webName{
+  .webName {
     font-size: 25px;
   }
 
-  .header{
+  .header {
     margin-top: 15vh;
   }
 
-  .header h2{
-    font-size: 50px ;
+  .nav_link {
+    margin-right: 20px;
+    margin-top: 17px;
+    margin-left: -17px;
   }
 
-  .header h3{
+  #Home a {
+    font-size: 100%;
+  }
+
+  #sub a {
+    font-size: 100%;
+  }
+
+  .header h2 {
+    font-size: 50px;
+  }
+
+  .header h3 {
     font-size: 15px;
   }
-  
-  .review{
-    height: 500px;
+
+  .review {
+    margin-top: 20px;
+    height: 1110px;
   }
 
-  .iframe iframe{
+  .iframe iframe {
+    margin-top: 0;
     margin-left: 0;
-    height:200px; 
-    width:400px;
+
+    width: 300px;
   }
 
-  .review .reviewer{
-    margin-top: 10px;
+  .review .reviewer {
+    margin-top: 25px;
   }
 
-  .reviewer h1{
+  .reviewer h1 {
     font-size: 40px;
   }
 
-  .reviewer p{
-    font-size: 25px;
+  .reviewer p {
+    font-size: 20px;
   }
 
+  .header #classHomework {
+    font-size: 90%;
+    color: red;
+    width: 350px;
+  }
+
+  .reviewer #paragraph {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30%;
+    width: 280px;
+    margin-top: -50px;
+  }
+
+  .reviewer {
+    height: 0;
+    width: 280px;
+  }
 }
