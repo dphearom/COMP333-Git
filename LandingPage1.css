@@ -11,7 +11,7 @@
 }
 header {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background: rgba(0, 0, 0, 0.7) url("./music-player-2951399.jpg");
   background-blend-mode: darken;
   background-position: center;
@@ -50,7 +50,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   color: whitesmoke;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .nav_link {
@@ -73,7 +73,7 @@ ul {
 
 .sub_sec {
   width: 90%;
-  margin-top: 30px;
+  margin-top: 90px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -104,9 +104,11 @@ ul {
   text-align: left;
   height: 300px;
   width: 450px;
+  background-color: rgba(10,214,221,0.3);
 }
 
 #sub-button{
+  margin-top: 10px;
   background-color: #4897b6;
   border: none;
   color: white;
@@ -132,12 +134,39 @@ ul {
 }
 
 .review{
-  float: left;
-  background-color: grey;
-  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(6,200,202,255));
+  margin-top: 150px;
+  padding-bottom: 100px;
+  height:60%
+  }
+
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 200px;
+  }
+
+.contain .reviewer{
+  margin-top: 100px;
+  font-size: 50px
+}
+
+
+.iframe iframe{
+  margin-top: 75px;
+  height:300px; 
+  width:800px;
+  margin-left: 25px;
 }
 
 @media only screen and (max-width: 768px){
+
+  header{
+    height: 80vh;
+  }
+
   .nav_link{
     column-gap: -10px;
   }
@@ -158,7 +187,26 @@ ul {
     font-size: 15px;
   }
   
+  .review{
+    height: 500px;
+  }
 
+  .iframe iframe{
+    margin-left: 0;
+    height:200px; 
+    width:400px;
+  }
 
+  .review .reviewer{
+    margin-top: 10px;
+  }
+
+  .reviewer h1{
+    font-size: 40px;
+  }
+
+  .reviewer p{
+    font-size: 25px;
+  }
 
 }
