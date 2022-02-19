@@ -79,7 +79,6 @@ ul {
   margin-top: 90px;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: lightblue;
 }
 
 .sub-container {
@@ -103,8 +102,6 @@ ul {
 }
 
 .sub-container .sub-adver2 {
-  /* border: 2px black;
-  border-style: dashed; */
   border-radius: 40px;
   text-align: left;
   height: 300px;
@@ -159,7 +156,7 @@ ul {
     rgba(0, 0, 0, 0),
     rgba(6, 200, 202, 255)
   );
-  margin-top: 100px;
+  margin-top: 4em;
   padding-bottom: 100px;
   height: 60%;
 }
@@ -173,8 +170,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
-  row-gap: 5%;
+  row-gap: 0;
 }
 
 .contain .reviewer {
@@ -196,6 +192,11 @@ ul {
   height: 100px;
   width: 700px;
 }
+
+.review .reviewer{
+  margin-top: 250px;
+}
+
 .reviewer #paragraph1 {
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   font-size: 50%;
@@ -209,7 +210,7 @@ ul {
 }
 
 .reviewer h1{
-  margin-top: 0;
+  margin-top: -100px;
   font-size:100%;
   margin-left: 100px;
 }
@@ -266,16 +267,17 @@ ul {
   .iframe iframe {
     margin-top: 0;
     margin-left: 0;
-
     width: 300px;
   }
 
   .review .reviewer {
-    margin-top: 25px;
+    margin-top: -10px;
   }
 
   .reviewer h1 {
     font-size: 40px;
+    margin-top: 40px;
+    margin-left: 60px;
   }
 
   .reviewer p {
@@ -291,17 +293,17 @@ ul {
   .reviewer #paragraph {
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30%;
-    width: 280px;
-    margin-top: -50px;
-  }
-
-  .reviewer {
-    height: 0;
-    width: 280px;
+    width: 250px;
+    margin-left: 65px;
   }
 
   .reviewer #paragraph1 {
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-    width: 110%;
+    width: 300px;
+    margin-left: 60px;
+  }
+
+  .contain{
+    margin-top: -35px;
   }
 }
