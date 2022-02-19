@@ -75,10 +75,11 @@ ul {
 
 .sub_sec {
   width: 90%;
-  height: 70%;
+  height: 60%;
   margin-top: 90px;
   margin-left: 5%;
   margin-right: 5%;
+  background-color: lightblue;
 }
 
 .sub-container {
@@ -106,7 +107,7 @@ ul {
   border-style: dashed; */
   border-radius: 40px;
   text-align: left;
-  height: 320px;
+  height: 300px;
   width: 450px;
   background-color: #0ad6dd4d;
   line-height: 1.5;
@@ -172,7 +173,8 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 195px;
+  
+  row-gap: 5%;
 }
 
 .contain .reviewer {
@@ -182,10 +184,11 @@ ul {
 
 .contain .iframe {
   margin-top: 120px;
+  margin-left: 20px;
 }
 
 .iframe iframe {
-  width: 700px;
+  width: 500px;
   height: 500px;
 }
 
@@ -195,10 +198,20 @@ ul {
 }
 .reviewer #paragraph1 {
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50%;
+  height: 50px;
+  margin-left: 100px
 }
 .reviewer #paragraph {
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 50%;
+  font-size: 40%;
+  margin-left: 100px;
+}
+
+.reviewer h1{
+  margin-top: 0;
+  font-size:100%;
+  margin-left: 100px;
 }
 
 @media only screen and (max-width: 768px) {
